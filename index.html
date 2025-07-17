@@ -1,0 +1,211 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Spotify Clone</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <ul>
+      <li class="brand">
+        <img src="logo.png" alt="Spotify" /> Spotify
+      </li>
+      <li>Home</li>
+      <li>About</li>
+    </ul>
+  </nav>
+
+  <!-- Main Container -->
+  <div class="container">
+    <div class="songlist">
+      <h1>If My Heart Had a Voice</h1>
+      <div class="list">
+
+        <div class="songItem">
+          <div class="songImageWrapper"><img src="covers/cover1.jpg" alt="1" /></div>
+          <span>Admirin'You</span>
+          <span class="songListplay"><span class="timestamp">03:34</span> <i class="fa fa-play-circle songPlay" id="0"></i></span>
+        </div>
+
+        <div class="songItem">
+          <div class="songImageWrapper"><img src="covers/cover2.jpeg" alt="2" /></div>
+          <span>Chiraiyya</span>
+          <span class="songListplay"><span class="timestamp">04:13</span> <i class="fa fa-play-circle songPlay" id="1"></i></span>
+        </div>
+
+        <div class="songItem">
+          <div class="songImageWrapper"><img src="covers/cover3.jpeg" alt="3" /></div>
+          <span>Tu Jahaan</span>
+          <span class="songListplay"><span class="timestamp">05:15</span> <i class="fa fa-play-circle songPlay" id="2"></i></span>
+        </div>
+
+        <div class="songItem">
+          <div class="songImageWrapper"><img src="covers/cover4.jpeg" alt="4" /></div>
+          <span>Kaise Mujhe</span>
+          <span class="songListplay"><span class="timestamp">05:46</span> <i class="fa fa-play-circle songPlay" id="3"></i></span>
+        </div>
+
+        <div class="songItem">
+          <div class="songImageWrapper"><img src="covers/cover5.jpeg" alt="5" /></div>
+          <span>Manzar Hai Ye</span>
+          <span class="songListplay"><span class="timestamp">04:03</span> <i class="fa fa-play-circle songPlay" id="4"></i></span>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Player Bar -->
+  <div class="bottom">
+  
+
+    <!-- Progress bar -->
+    <input type="range" name="range" id="MyProgressionBar" min="0" max="100" />
+
+    <!-- Controls -->
+    <div class="icons">
+      <i class="fa fa-backward" id="prev" aria-hidden="true"></i>
+      <i class="fa fa-play-circle" id="masterPlay" aria-hidden="true"></i>
+      <i class="fa fa-forward" id="next" aria-hidden="true"></i>
+      <i class="fa fa-repeat" id="loopToggle" title="Loop song"></i>
+    </div>
+
+    <!-- Song name & Info -->
+   
+    <div class="songInfo">
+      <img src="music.gif" width="42px" alt="Playing" />
+      <span id="songInfoText">Admirin'You – Karan Aujla</span>
+    </div>
+
+    <!-- Time Display -->
+    <div id="timeInfo">
+       <span id="currentSongName">Admirin'You</span>
+      <span id="currentTime">0:00</span> / <span id="duration">0:00</span>
+    </div>
+
+    <!-- Volume -->
+    <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="1" title="Volume" />
+  </div>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+<!-- 
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+    <body>
+    <nav>
+        <ul>
+            <li class="brand">
+                <img src="logo.png" alt="Spotify"/> Spotify
+            </li>
+            <li>Home</li>
+            <li>About</li>
+        </ul>
+    </nav>
+         <div class="container">
+             <div class="songlist"> </div>
+             <h1>If My Heart Had a Voice</h1>
+            <div class="list">
+    <div class="songItem">
+          <div class="songImageWrapper">
+        <img src="covers/cover1.jpg" alt="1">
+        
+        </div>
+        <span>Admirin'You</span>
+        <span class="songListplay"><span class="timestamp">03:34 </span> <i class="fa fa-play-circle songPlay" id="0"></i></span>
+    </div>
+
+    <div class="songItem">
+           <div class="songImageWrapper">
+        <img src="covers/cover2.jpeg" alt="2">
+      
+        </div>
+        <span>Chiraiyya</span>
+        <span class="songListplay"><span class="timestamp">04:13 </span>  <i class="fa fa-play-circle songPlay" id="1"></i></span>
+    </div>
+
+    <div class="songItem">
+         <div class="songImageWrapper">
+        <img src="covers/cover3.jpeg" alt="3">
+    
+        </div>
+        <span>Tu Jahaan</span>
+        <span class="songListplay"><span class="timestamp">05:15 </span>  <i class="fa fa-play-circle songPlay" id="2"></i></span>
+    </div>
+   
+
+     <div class="songItem">
+         <div class="songImageWrapper">
+        <img src="covers/cover4.jpeg" alt="4">
+ 
+        </div>
+        <span>Kaise Mujhe</span>
+        <span class="songListplay"><span class="timestamp">05:46 </span> <i class="fa fa-play-circle songPlay" id="3"></i></span>
+    </div>
+
+     <div class="songItem">
+         <div class="songImageWrapper">
+        <img src="covers/cover5.jpeg" alt="5">
+     
+        </div>
+        <span>Manzar Hai Ye</span>
+        <span class="songListplay"><span class="timestamp">04:03 </span>  <i class="fa fa-play-circle songPlay" id="4"></i></span>
+    </div>
+</div>
+
+
+             </div>
+            
+            <div class="songbanner"></div>
+         </div>
+
+
+        <div class="bottom">
+               <div id="songTitleBelowBar">Admirin'You</div>
+    <input type="range" name="range" id="MyProgressionBar" min=0 max=100>
+    <div class="icons">
+        <i class="fa fa-backward" id="prev" aria-hidden="true"></i>
+        <i class="fa fa-play-circle" aria-hidden="true" id="masterPlay"></i>
+        <i class="fa fa-forward" id="next" aria-hidden="true"></i>
+        <i class="fa fa-repeat" id="loopToggle" title="Loop song"></i>
+    </div>
+   <span id="currentSongName"></span>
+   <div class="songInfo">
+    <img src="music.gif" width="42px" alt=""> <span id="currentSongName">Admirin' You – Karan Aujla</span>
+</div>
+
+
+</div>
+
+<!-- 
+         <div id="timeInfo">
+    <span id="currentTime">0:00</span> / <span id="duration">0:00</span>
+</div> -->
+<!-- <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="1" title="Volume"> -->
+
+         
+
+  <script src="script.js"></script>
+
+    
+    
+</body>
+</html>   -->
