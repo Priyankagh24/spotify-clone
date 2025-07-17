@@ -49,7 +49,7 @@ durationEl.innerText = '0:00';
   audioElement.currentTime = 0;
   audioElement.play().then(() => {
     updateUI();
-    updateMasterIcon(true); // ✅ make sure master play button is updated here
+    updateMasterIcon(true); // 
     resetAllPlays();
     const currentIcon = document.getElementById(index);
     currentIcon.classList.remove('fa-play-circle');
